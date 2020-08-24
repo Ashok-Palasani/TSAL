@@ -1,0 +1,85 @@
+C:\Users\TECH-1\Documents\Visual Studio 2012\TATA\TATA Workspace\CalOEEDaily\CalOEEDaily\bin\Debug\CalOEEDaily.exe.config
+C:\Users\TECH-1\Documents\Visual Studio 2012\TATA\TATA Workspace\CalOEEDaily\CalOEEDaily\bin\Debug\CalOEEDaily.exe
+C:\Users\TECH-1\Documents\Visual Studio 2012\TATA\TATA Workspace\CalOEEDaily\CalOEEDaily\bin\Debug\CalOEEDaily.pdb
+C:\Users\TECH-1\Documents\Visual Studio 2012\TATA\TATA Workspace\CalOEEDaily\CalOEEDaily\bin\Debug\EntityFramework.dll
+C:\Users\TECH-1\Documents\Visual Studio 2012\TATA\TATA Workspace\CalOEEDaily\CalOEEDaily\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\TECH-1\Documents\Visual Studio 2012\TATA\TATA Workspace\CalOEEDaily\CalOEEDaily\bin\Debug\MySql.Data.dll
+C:\Users\TECH-1\Documents\Visual Studio 2012\TATA\TATA Workspace\CalOEEDaily\CalOEEDaily\bin\Debug\MySql.Data.Entity.EF6.dll
+C:\Users\TECH-1\Documents\Visual Studio 2012\TATA\TATA Workspace\CalOEEDaily\CalOEEDaily\bin\Debug\EntityFramework.xml
+C:\Users\TECH-1\Documents\Visual Studio 2012\TATA\TATA Workspace\CalOEEDaily\CalOEEDaily\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\TECH-1\Documents\Visual Studio 2012\TATA\TATA Workspace\CalOEEDaily\CalOEEDaily\obj\Debug\CalOEEDaily.csprojResolveAssemblyReference.cache
+C:\Users\TECH-1\Documents\Visual Studio 2012\TATA\TATA Workspace\CalOEEDaily\CalOEEDaily\obj\Debug\CalOEEDaily.Properties.Resources.resources
+C:\Users\TECH-1\Documents\Visual Studio 2012\TATA\TATA Workspace\CalOEEDaily\CalOEEDaily\obj\Debug\CalOEEDaily.csproj.GenerateResource.Cache
+C:\Users\TECH-1\Documents\Visual Studio 2012\TATA\TATA Workspace\CalOEEDaily\CalOEEDaily\obj\Debug\CalOEEDaily.exe
+C:\Users\TECH-1\Documents\Visual Studio 2012\TATA\TATA Workspace\CalOEEDaily\CalOEEDaily\obj\Debug\CalOEEDaily.pdb
+D:\Ashok\TATAProjects\CalOEEDaily\CalOEEDaily\bin\Debug\CalOEEDaily.exe.config
+D:\Ashok\TATAProjects\CalOEEDaily\CalOEEDaily\bin\Debug\CalOEEDaily.exe
+D:\Ashok\TATAProjects\CalOEEDaily\CalOEEDaily\bin\Debug\CalOEEDaily.pdb
+D:\Ashok\TATAProjects\CalOEEDaily\CalOEEDaily\bin\Debug\EntityFramework.dll
+D:\Ashok\TATAProjects\CalOEEDaily\CalOEEDaily\bin\Debug\EntityFramework.SqlServer.dll
+D:\Ashok\TATAProjects\CalOEEDaily\CalOEEDaily\bin\Debug\MySql.Data.dll
+D:\Ashok\TATAProjects\CalOEEDaily\CalOEEDaily\bin\Debug\MySql.Data.Entity.EF6.dll
+D:\Ashok\TATAProjects\CalOEEDaily\CalOEEDaily\bin\Debug\EntityFramework.xml
+D:\Ashok\TATAProjects\CalOEEDaily\CalOEEDaily\bin\Debug\EntityFramework.SqlServer.xml
+D:\Ashok\TATAProjects\CalOEEDaily\CalOEEDaily\obj\Debug\CalOEEDaily.csprojResolveAssemblyReference.cache
+D:\Ashok\TATAProjects\CalOEEDaily\CalOEEDaily\obj\Debug\CalOEEDaily.Properties.Resources.resources
+D:\Ashok\TATAProjects\CalOEEDaily\CalOEEDaily\obj\Debug\CalOEEDaily.csproj.GenerateResource.cache
+D:\Ashok\TATAProjects\CalOEEDaily\CalOEEDaily\obj\Debug\CalOEEDaily.csproj.CoreCompileInputs.cache
+D:\Ashok\TATAProjects\CalOEEDaily\CalOEEDaily\obj\Debug\CalOEEDaily.csproj.CopyComplete
+D:\Ashok\TATAProjects\CalOEEDaily\CalOEEDaily\obj\Debug\CalOEEDaily.exe
+D:\Ashok\TATAProjects\CalOEEDaily\CalOEEDaily\obj\Debug\CalOEEDaily.pdb
+D:\Ashok\TATAProjects\CalOeeDailyForPreviousDays\CalOEEDaily\bin\Debug\CalOEEDaily.exe.config
+D:\Ashok\TATAProjects\CalOeeDailyForPreviousDays\CalOEEDaily\bin\Debug\CalOEEDaily.exe
+D:\Ashok\TATAProjects\CalOeeDailyForPreviousDays\CalOEEDaily\bin\Debug\CalOEEDaily.pdb
+D:\Ashok\TATAProjects\CalOeeDailyForPreviousDays\CalOEEDaily\bin\Debug\EntityFramework.dll
+D:\Ashok\TATAProjects\CalOeeDailyForPreviousDays\CalOEEDaily\bin\Debug\EntityFramework.SqlServer.dll
+D:\Ashok\TATAProjects\CalOeeDailyForPreviousDays\CalOEEDaily\bin\Debug\MySql.Data.Entity.EF6.dll
+D:\Ashok\TATAProjects\CalOeeDailyForPreviousDays\CalOEEDaily\bin\Debug\EntityFramework.xml
+D:\Ashok\TATAProjects\CalOeeDailyForPreviousDays\CalOEEDaily\bin\Debug\EntityFramework.SqlServer.xml
+D:\Ashok\TATAProjects\CalOeeDailyForPreviousDays\CalOEEDaily\obj\Debug\CalOEEDaily.Properties.Resources.resources
+D:\Ashok\TATAProjects\CalOeeDailyForPreviousDays\CalOEEDaily\obj\Debug\CalOEEDaily.csproj.GenerateResource.cache
+D:\Ashok\TATAProjects\CalOeeDailyForPreviousDays\CalOEEDaily\obj\Debug\CalOEEDaily.csproj.CoreCompileInputs.cache
+D:\Ashok\TATAProjects\CalOeeDailyForPreviousDays\CalOEEDaily\obj\Debug\CalOEEDaily.csproj.CopyComplete
+D:\Ashok\TATAProjects\CalOeeDailyForPreviousDays\CalOEEDaily\obj\Debug\CalOEEDaily.exe
+D:\Ashok\TATAProjects\CalOeeDailyForPreviousDays\CalOEEDaily\obj\Debug\CalOEEDaily.pdb
+E:\Vignesh\TATA\calOeeapplicationSQL\CalOEEDaily\bin\Debug\CalOEEDaily.exe.config
+E:\Vignesh\TATA\calOeeapplicationSQL\CalOEEDaily\bin\Debug\CalOEEDaily.exe
+E:\Vignesh\TATA\calOeeapplicationSQL\CalOEEDaily\bin\Debug\CalOEEDaily.pdb
+E:\Vignesh\TATA\calOeeapplicationSQL\CalOEEDaily\bin\Debug\EntityFramework.dll
+E:\Vignesh\TATA\calOeeapplicationSQL\CalOEEDaily\bin\Debug\EntityFramework.SqlServer.dll
+E:\Vignesh\TATA\calOeeapplicationSQL\CalOEEDaily\bin\Debug\EntityFramework.xml
+E:\Vignesh\TATA\calOeeapplicationSQL\CalOEEDaily\bin\Debug\EntityFramework.SqlServer.xml
+E:\Vignesh\TATA\calOeeapplicationSQL\CalOEEDaily\obj\Debug\CalOEEDaily.csprojAssemblyReference.cache
+E:\Vignesh\TATA\calOeeapplicationSQL\CalOEEDaily\obj\Debug\CalOEEDaily.Properties.Resources.resources
+E:\Vignesh\TATA\calOeeapplicationSQL\CalOEEDaily\obj\Debug\CalOEEDaily.csproj.GenerateResource.cache
+E:\Vignesh\TATA\calOeeapplicationSQL\CalOEEDaily\obj\Debug\CalOEEDaily.csproj.CoreCompileInputs.cache
+E:\Vignesh\TATA\calOeeapplicationSQL\CalOEEDaily\obj\Debug\CalOEEDaily.csproj.CopyComplete
+E:\Vignesh\TATA\calOeeapplicationSQL\CalOEEDaily\obj\Debug\CalOEEDaily.exe
+E:\Vignesh\TATA\calOeeapplicationSQL\CalOEEDaily\obj\Debug\CalOEEDaily.pdb
+C:\Users\Pavan Kumar V\Desktop\Vignesh\20190608\20190528calOeeapplicationSQL\CalOEEDaily\bin\Debug\CalOEEDaily.exe.config
+C:\Users\Pavan Kumar V\Desktop\Vignesh\20190608\20190528calOeeapplicationSQL\CalOEEDaily\bin\Debug\CalOEEDaily.exe
+C:\Users\Pavan Kumar V\Desktop\Vignesh\20190608\20190528calOeeapplicationSQL\CalOEEDaily\bin\Debug\CalOEEDaily.pdb
+C:\Users\Pavan Kumar V\Desktop\Vignesh\20190608\20190528calOeeapplicationSQL\CalOEEDaily\bin\Debug\EntityFramework.dll
+C:\Users\Pavan Kumar V\Desktop\Vignesh\20190608\20190528calOeeapplicationSQL\CalOEEDaily\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Pavan Kumar V\Desktop\Vignesh\20190608\20190528calOeeapplicationSQL\CalOEEDaily\bin\Debug\EntityFramework.xml
+C:\Users\Pavan Kumar V\Desktop\Vignesh\20190608\20190528calOeeapplicationSQL\CalOEEDaily\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Pavan Kumar V\Desktop\Vignesh\20190608\20190528calOeeapplicationSQL\CalOEEDaily\obj\Debug\CalOEEDaily.Properties.Resources.resources
+C:\Users\Pavan Kumar V\Desktop\Vignesh\20190608\20190528calOeeapplicationSQL\CalOEEDaily\obj\Debug\CalOEEDaily.csproj.GenerateResource.cache
+C:\Users\Pavan Kumar V\Desktop\Vignesh\20190608\20190528calOeeapplicationSQL\CalOEEDaily\obj\Debug\CalOEEDaily.csproj.CoreCompileInputs.cache
+C:\Users\Pavan Kumar V\Desktop\Vignesh\20190608\20190528calOeeapplicationSQL\CalOEEDaily\obj\Debug\CalOEEDaily.csproj.CopyComplete
+C:\Users\Pavan Kumar V\Desktop\Vignesh\20190608\20190528calOeeapplicationSQL\CalOEEDaily\obj\Debug\CalOEEDaily.exe
+C:\Users\Pavan Kumar V\Desktop\Vignesh\20190608\20190528calOeeapplicationSQL\CalOEEDaily\obj\Debug\CalOEEDaily.pdb
+C:\Users\Pavan Kumar V\Desktop\IMP_DeskTop_20200220\Vignesh\20190608\20190528calOeeapplicationSQL\CalOEEDaily\bin\Debug\CalOEEDaily.exe.config
+C:\Users\Pavan Kumar V\Desktop\IMP_DeskTop_20200220\Vignesh\20190608\20190528calOeeapplicationSQL\CalOEEDaily\bin\Debug\CalOEEDaily.exe
+C:\Users\Pavan Kumar V\Desktop\IMP_DeskTop_20200220\Vignesh\20190608\20190528calOeeapplicationSQL\CalOEEDaily\bin\Debug\CalOEEDaily.pdb
+C:\Users\Pavan Kumar V\Desktop\IMP_DeskTop_20200220\Vignesh\20190608\20190528calOeeapplicationSQL\CalOEEDaily\bin\Debug\EntityFramework.dll
+C:\Users\Pavan Kumar V\Desktop\IMP_DeskTop_20200220\Vignesh\20190608\20190528calOeeapplicationSQL\CalOEEDaily\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Pavan Kumar V\Desktop\IMP_DeskTop_20200220\Vignesh\20190608\20190528calOeeapplicationSQL\CalOEEDaily\bin\Debug\EntityFramework.xml
+C:\Users\Pavan Kumar V\Desktop\IMP_DeskTop_20200220\Vignesh\20190608\20190528calOeeapplicationSQL\CalOEEDaily\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Pavan Kumar V\Desktop\IMP_DeskTop_20200220\Vignesh\20190608\20190528calOeeapplicationSQL\CalOEEDaily\obj\Debug\CalOEEDaily.csprojAssemblyReference.cache
+C:\Users\Pavan Kumar V\Desktop\IMP_DeskTop_20200220\Vignesh\20190608\20190528calOeeapplicationSQL\CalOEEDaily\obj\Debug\CalOEEDaily.Properties.Resources.resources
+C:\Users\Pavan Kumar V\Desktop\IMP_DeskTop_20200220\Vignesh\20190608\20190528calOeeapplicationSQL\CalOEEDaily\obj\Debug\CalOEEDaily.csproj.GenerateResource.cache
+C:\Users\Pavan Kumar V\Desktop\IMP_DeskTop_20200220\Vignesh\20190608\20190528calOeeapplicationSQL\CalOEEDaily\obj\Debug\CalOEEDaily.csproj.CoreCompileInputs.cache
+C:\Users\Pavan Kumar V\Desktop\IMP_DeskTop_20200220\Vignesh\20190608\20190528calOeeapplicationSQL\CalOEEDaily\obj\Debug\CalOEEDaily.csproj.CopyComplete
+C:\Users\Pavan Kumar V\Desktop\IMP_DeskTop_20200220\Vignesh\20190608\20190528calOeeapplicationSQL\CalOEEDaily\obj\Debug\CalOEEDaily.exe
+C:\Users\Pavan Kumar V\Desktop\IMP_DeskTop_20200220\Vignesh\20190608\20190528calOeeapplicationSQL\CalOEEDaily\obj\Debug\CalOEEDaily.pdb
