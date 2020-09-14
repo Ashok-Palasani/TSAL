@@ -1,0 +1,288 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1- strict.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+    <meta name="robots" content="noodp,noydir" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TATA</title>
+
+    <link rel="apple-touch-icon" sizes="144x144" href="~/Images/apple-touch-icon-ipad-retina.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="~/Images/apple-touch-icon-iphone-retina.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="~/Images/apple-touch-icon-ipad.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="~/Images/apple-touch-icon-iphone.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="~/Images/120px-Tata_logoicon.ico" />
+
+
+    <!-- bootstrap -->
+    <link href="~/css/bootstrap/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/jquery.datetimepicker.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/css/font-awesome-4.3.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="~/css/jquery-ui.css" />
+    <link rel="stylesheet" type="text/css" href="~/css/toastr.css" />
+
+    <link href="~/css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="~/css/pe-icon-7-filled.css" />
+    <link rel="stylesheet" type="text/css" href="~/css/pe-icon-7-stroke.css" />
+    <link href="~/css/font-awesome.css" rel="stylesheet" />
+
+
+    <!-- Bootstrap -->
+    <link href="~/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Font Awesome -->
+    <link href="~/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <!-- NProgress -->
+    <link href="~/vendors/nprogress/nprogress.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../vendors/bootstrap-chosen.css">
+    <!-- Font Awesome -->
+    <link href="~/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <!-- NProgress -->
+    <link href="~/vendors/nprogress/nprogress.css" rel="stylesheet" />
+    @*<link rel="stylesheet" type="text/css" href="../vendors/tooltip/tooltip.css">*@
+    <link href="~/vendors/tooltip/tooltip.css" rel="stylesheet" />
+    <!-- bootstrap-daterangepicker -->
+    @*<link href="../vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">*@
+    <link href="~/vendors/datatables.net-fixedheader-bs/css/fixedHeader.bootstrap.min.css" rel="stylesheet">
+    <link href="~/vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet" />
+    <link href="~/vendors/datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet" />
+    <!-- bootstrap-datetimepicker -->
+    <link href="~/vendors/bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.css" rel="stylesheet" />
+    <!-- timeicker -->
+    <link href="~/vendors/
+          /timepicker.css" rel="stylesheet" />
+    <!-- Custom Theme Style -->
+    <link href="~/build/css/custom.css" rel="stylesheet">
+    @*<link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">*@
+
+    <!-- ICONS -->
+    <link href="~/vendors/icons/fontawesome/fontawesome.css" rel="stylesheet" type="text/css" />
+    <link href="~/vendors/icons/linecons/linecons.css" rel="stylesheet" />
+    <link href="~/vendors/icons/spinnericon/spinnericon.css" rel="stylesheet" />
+    <link href="~/vendors/helpers/utils.css" rel="stylesheet" />
+    <link href="~/vendors/element/tile-box.css" rel="stylesheet" />
+
+    <!-- Compare -->
+    <link rel="stylesheet" href="~/vendors/lib/codemirror.css" />
+    <link rel="stylesheet" href="~/vendors/lib/mergely.css" />
+    <link rel="stylesheet" type="text/css" href="~/vendors/editor.css">
+
+    <style type="text/css">
+        .ui-dialog .ui-dialog-title {
+            float: left;
+            margin: .1em 0;
+            white-space: nowrap;
+            width: 90%;
+            overflow: hidden;
+            color: black;
+            text-overflow: ellipsis;
+        }
+
+        .ui-button .ui-button-text {
+            display: block;
+            color: black;
+            line-height: normal;
+        }
+
+        /*added the styles to create button */
+        a.btn.orange.btn-lg {
+        background-color:orange;
+        border:1px solid blue;
+
+        }
+        .set_name {
+            margin-left: 10px;
+        }
+
+    </style>
+
+    <style type="text/css">
+        th {
+            background-color: orange;
+        }
+    </style>
+
+</head>
+<body>
+
+
+    @*<div id="loading">
+            <div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>*@
+
+    <div id="wrapper" style="height: auto">
+        <div id="top">
+            <div class="main-logo">
+                @if (ViewBag.roleid < 3)
+                {
+                    <a href="~/Dashboard/Index" onclick="return true;">
+                        <img src="~/Images/120px-Tata_logo.png" style="width: 35%; height: 35%" />
+                    </a>
+                }
+                @if (ViewBag.roleid == 3)
+                {
+                    @*<a href="~/HMIScree/ChooseWorkOrder" onclick="return true;">*@
+
+                    <a href="~/NewHMIScreen/ChooseWorkOrder" onclick="return true;">
+                        <img src="~/Images/120px-Tata_logo.png" style="width: 35%; height: 35%" />
+                    </a>
+                }
+                @if (ViewBag.roleid == 4)
+                {
+                    <a href="~/MachineStatus/Index" onclick="return true;">
+                        <img src="~/Images/120px-Tata_logo.png" style="width: 35%; height: 35%" />
+                    </a>
+                }
+            </div>
+
+            <div class="m-nav"><i class="fa fa-bars"></i></div>
+
+            <div class="profile-nav">
+                <div style="display: inline; color: white">
+                    Welcome  @ViewBag.Logout
+                </div>
+
+
+                <div style="display: inline; color: white;">
+                    @*@Html.ActionLink("Logout", "Logout", "Login", new { @class="btn red btn-primary", @style="color:white"})*@
+                    <b><a href="~/Login/Logout" style="padding-top: 10px;color:black;background-color:red;" class="btn red">Logout</a>  </b>
+                </div>
+            </div>
+
+        </div>
+        <!-- /top -->
+        <div id="sidebar" class="main_menu_side hidden-print main_menu">
+            <ul class="nav sdbar" style="cursor: pointer;"></ul>
+        </div>
+
+        @*<div id="sidebar" class="main_menu_side hidden-print main_menu">
+            <ul  class="nav sdbar"  class="nav child_menu"></ul>
+        </div>*@
+
+
+
+        @*<div id="sidebar" >
+            <ul class="nav sdbar" ></ul>
+        </div>*@
+
+
+        <!-- /sidebar -->
+        <div id="content" class="clearfix">
+            @RenderBody()
+        </div>
+        <!-- /content -->
+        <footer class="footer">
+            <a href="http://www.srkssolutions.com/">2016 © SRKS&nbspSoftware&nbspSolutions</a>
+        </footer>
+    </div>
+    <!-- /wrapper -->
+
+</body>
+</html>
+
+<script src="~/vendors/jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap -->
+<script src="~/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+
+<script src="~/Scripts/MCAdmin/Menu1.js"></script>
+
+<script src="~/Scripts/MCAdmin/Menu.js"></script>
+@*<script src="~/Scripts/MCAdmin/Menu.js"></script>*@
+
+<!-- FastClick -->
+<script src="~/vendors/fastclick/lib/fastclick.js"></script>
+<!-- NProgress -->
+<script src="~/vendors/nprogress/nprogress.js"></script>
+<!-- validator -->
+<script src="~/vendors/validator/validator.js"></script>
+<!-- Custom Theme Scripts -->
+<script src="~/build/js/custom.js" type="text/javascript"></script>
+
+@*<script src="../vendors/chosen-select.js" type="text/javascript"></script>*@
+
+<!-- bootstrap-daterangepicker -->
+<script src="~/vendors/moment/min/moment.min.js"></script>
+<script src="~/vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+<!-- bootstrap-datetimepicker -->
+<script src="~/vendors/bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+<!-- Compare -->
+<script src="~/vendors/lib/codemirror.js"></script>
+<script src="~/vendors/lib/mergely.js"></script>
+
+<!-- Datatables -->
+<script src="~/vendors/datatables.net/js/jquery.dataTables.min.js"></script>
+<script src="~/vendors/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+<script src="~/vendors/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+<script src="~/vendors/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+<script src="~/vendors/datatables.net-buttons/js/buttons.flash.min.js"></script>
+<script src="~/vendors/datatables.net-buttons/js/buttons.html5.min.js"></script>
+<script src="~/vendors/datatables.net-buttons/js/buttons.print.min.js"></script>
+<script src="~/vendors/datatables.net-fixedheader/js/dataTables.fixedHeader.min.js"></script>
+<script src="~/vendors/datatables.net-keytable/js/dataTables.keyTable.min.js"></script>
+<script src="~/vendors/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+<script src="~/vendors/datatables.net-responsive-bs/js/responsive.bootstrap.js"></script>
+<script src="~/vendors/datatables.net-scroller/js/dataTables.scroller.min.js"></script>
+<script src="~/vendors/jszip/dist/jszip.min.js"></script>
+<script src="~/vendors/pdfmake/build/pdfmake.min.js"></script>
+<script src="~/vendors/pdfmake/build/vfs_fonts.js"></script>
+<script src="~/vendors/jquery.inputmask/dist/min/jquery.inputmask.bundle.min.js"></script>
+<script src="~/vendors/editor.js"></script>
+
+
+<script type="text/javascript">
+    function startTime() {
+        var today = new Date();
+        var h = today.getHours();
+        var m = today.getMinutes();
+        var s = today.getSeconds();
+        m = checkTime(m);
+        s = checkTime(s);
+        document.getElementById('txt').innerHTML = h + ":" + m + ":" + s;
+        var t = setTimeout(function () { startTime() }, 500);
+    }
+
+    function checkTime(i) {
+        if (i < 10) { i = "0" + i };  // add zero in front of numbers < 10
+        return i;
+    }
+</script>
+
+@*turnoff autocomplete in all input fields*@
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(document).on('focus', ':input', function () {
+            $(this).attr('autocomplete', 'off');
+        });
+    });
+</script>
+<script type="text/javascript">
+    $(window).load(function () {
+
+        //for dummy loading screen
+        $('#loading').fadeOut(1000);
+
+        //for dropdown collapse
+        $('.collapsible > a').click(function () {
+            $(this).parent().toggleClass('open');
+            if ($(this).parent().siblings().hasClass('open')) {
+                $(this).parent().siblings().removeClass('open');
+            }
+            return false;
+        });
+    });
+</script>
+<style type="text/css">
+    label {
+        color: blue;
+        font-style: oblique;
+    }
+</style>
+<style type="text/css">
+    span {
+        color: red;
+        font-size: 100%;
+    }
+</style>

@@ -1,0 +1,382 @@
+﻿@model IEnumerable<i_facility.Models.tbluser>
+    @{
+        ViewBag.Title = "Users";
+
+        var slno = 1;
+        if (ViewBag.roleid == 1 || ViewBag.roleid == 2)
+        {
+            Layout = "~/Views/Shared/_SuperTable.cshtml";
+        }
+        int mcid = Convert.ToInt32(ViewBag.mcnid);
+        int opid = Convert.ToInt32(ViewBag.opid);
+        int roleid = Convert.ToInt32(Session["RoleID"]);
+        string date = ViewBag.coretddt;
+        var a = Session["VError"];
+        var b = a;
+    }
+
+    @*<link rel="stylesheet" href="https://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+        <link rel="stylesheet" href="https://cdn.datatables.net/plug-ins/9dcbecd42ad/integration/jqueryui/dataTables.jqueryui.css">
+        <script src="~/Content1/SuperTable/jquery.min.js"></script>
+        <script src="https://cdn.datatables.net/1.10.4/js/jquery.dataTables.min.js"></script>
+        <script src="https://cdn.datatables.net/plug-ins/9dcbecd42ad/integration/jqueryui/dataTables.jqueryui.js"></script>*@
+
+    <link href="~/Content1/SuperTable/jquery-ui.css" rel="stylesheet" />
+    <link href="~/Content1/SuperTable/dataTables.jqueryui.css" rel="stylesheet" />
+
+
+
+
+    @*@Styles.Render("~/Content/datatables")*@
+
+    <style type="text/css">
+        [hidden] {
+            display: none;
+        }
+
+        .pull-left {
+            float: left !important;
+        }
+
+        /*.visuallyhidden {
+            position: absolute;
+            overflow: hidden;
+            clip: rect(0 0 0 0);
+            height: 1px; width: 1px;
+            margin: -1px; padding: 0; border: 0;
+        }*/
+    </style>
+
+    <style type="text/css">
+        th {
+            background-color: orange;
+        }
+    </style>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+        @Html.ValidationSummary(true)
+
+        @*<div id="ErrorDiv" style="z-index: 1000; top: 0; left: 0; width: auto; position: absolute; margin-left: 60%">
+                 @if (Session["Error"] != null)
+                        {
+                            <pre>
+            <span style="font-family:Calibri;font-size:3vh;color:red">@Session["Error"]</span>
+                                </pre>
+                            Session["Error"] = null;
+                        }
+                     </div>
+        *@
+
+        <div class="wrp clearfix">
+            <div class="fluid">
+                <div class="wrapper">
+                    <section class="content">
+                        <div class="row">
+
+                            <div class="col-md-2" style="float: left; margin-left: .1%">
+                                <div id="sidebar">
+                                    @* <div class="search">
+                                            <input type="search" placeholder="Search here...">
+                                            <i class="fa fa-search"></i>
+                                        </div>*@
+                                    <ul class="main-nav">
+                                        @if (ViewBag.roleid != 3)
+                                        {
+                                            @* if (ViewBag.roleid != 4)
+                                                {
+                                                <li><a href="~/Dashboard/Index" onclick="return true;"><img src="~/icons/home168.png" />
+                                                    &nbsp Dashboard</a></li>
+                                                }
+                                                if (ViewBag.roleid == 4)
+                                                {
+                                                <li><a href="~/MachineStatus/Index" onclick="return true;"><img src="~/icons/home168.png" />
+                                                    &nbsp Dashboard</a></li>
+                                                }
+                                            *@
+                                            <li class="collapsible">
+                                                <a href="#" onclick="return false;">
+                                                    <img src="~/icons/businessman242.png" />
+                                                    &nbsp Dashboard
+                                                </a>
+                                                <ul class="sub-menu">
+                                                    <li><a href="~/MachineStatus2/Index">Machine Status</a></li>
+                                                    <li><a href="~/OEEDashboard/Index">OEE Dashboard</a></li>
+                                                    @*<li><a href="~/MimicsDashboard/Index">Mimics Dashboard</a></li>*@
+                                                </ul>
+                                            </li>
+                                        }
+                                        @if (ViewBag.roleid == 1 || ViewBag.roleid == 2 || ViewBag.roleid == 5)
+                                        {
+                                            if (ViewBag.roleid == 1 || ViewBag.roleid == 2)
+                                            {
+                                                <li>
+                                                    @*<a href="~/HMIScree/Index">*@
+                                                    <a href="~/NewHMIScreen/Index">
+                                                        <img src="~/icons/flatscreen.png" />
+                                                        &nbsp PartEntry Screen
+                                                    </a>
+                                                </li>
+                                                @*
+                                                     <li><a href="~/GenericWork/Index">
+                                                        <img src="~/icons/flatscreen.png" alt="GenericWork"/>
+                                                        &nbsp GenericWork Codes</a>
+                                                    </li>*@
+                                            }
+
+                                            <li class="collapsible">
+                                                <a href="#" onclick="return false;">
+                                                    <img src="~/icons/news29%20(1).png" />
+                                                    &nbsp Reports
+                                                </a>
+                                                <ul class="sub-menu">
+                                                    <li>@Html.ActionLink("OEE Report", "OEEReport", "Report")</li>
+                                                    <li>@Html.ActionLink("Utilization Report ", "UtilizationReportL", "Report")</li>
+                                                    <li>@Html.ActionLink("Job Report", "JobReport", "Report")</li>
+
+                                                    <li>@Html.ActionLink("LossAnalysis Report", "LossAnalysis", "Report")</li>
+                                                    <li>@Html.ActionLink("ManualWO Report", "ManualWOReport", "Report")</li>
+                                                    <li>@Html.ActionLink("NoLogin Report", "NoLoginReport", "Report")</li>
+                                                    <li>@Html.ActionLink("UnAssignedWO Report", "UnAssignedWOReport", "Report")</li>
+                                                    <li>@Html.ActionLink("UnIdentified Loss Report", "UnIdentifiedReport", "Report")</li>
+
+                                                    <li>@Html.ActionLink("PartLearning Report", "PartLearning", "Report")</li>
+                                                    <li>@Html.ActionLink("MRR Report", "MRRReport", "Report")</li>
+                                                    <li>@Html.ActionLink("MasterParts_Cutting", "StdTimeWeightReport", "Report")</li>
+
+                                                    <li>@Html.ActionLink("Loss Register", "IdleList", "Report")</li>
+                                                    @*<li>@Html.ActionLink("OverTime Report", "OverTimeReport", "Report")</li>
+
+                                                        <li>@Html.ActionLink("OEE Report", "UtilizationReport", "Report")</li>
+
+                                                        <li>@Html.ActionLink("Breakdown List", "BreakdownList", "Report")</li>
+                                                        <li>@Html.ActionLink("Alarm Report", "AlarmReport", "Report")</li>
+                                                        <li>@Html.ActionLink("MUR Report", "MURReport", "Report")</li>
+                                                        <li>@Html.ActionLink("Operator JOB Report", "HMIoperator", "Report")</li>
+                                                        <li>@Html.ActionLink("JOB Report", "HMIdate", "Report")</li>*@
+                                                </ul>
+                                            </li>
+
+                                            <li class="collapsible">
+                                                <a href="#" onclick="return false;">
+                                                    <img src="~/icons/gears1.png" />
+                                                    &nbsp Machine Config.
+                                                </a>
+                                                <ul class="sub-menu">
+                                                    <li>@Html.ActionLink("Plant Details", "Index", "Plant")</li>
+                                                    <li>@Html.ActionLink("Shop Details", "Index", "Shop")</li>
+                                                    <li>@Html.ActionLink("Cell Details", "Index", "Cell")</li>
+                                                    <li>@Html.ActionLink("DDL Details", "DDLList", "DDL")</li>
+                                                    <li>@Html.ActionLink("Machine Category", "Index", "MachineCategory")</li>
+                                                    <li>@Html.ActionLink("Machine Details", "Index", "MachineDetails")</li>
+                                                </ul>
+                                            </li>
+                                            <li class="collapsible">
+                                                <a href="#" onclick="return false;">
+                                                    <img src="~/icons/business73%20(1).png" />&nbsp Losses & Breakdown
+                                                </a>
+                                                <ul class="sub-menu">
+                                                    <li>@Html.ActionLink("Idle Reason", "Index", "IdleCodes")</li>
+                                                    <li>@Html.ActionLink("BreakDown Reason", "Index", "BreakdownCodes")</li>
+                                                    <li>@Html.ActionLink("Hold Codes", "Index", "HoldCodes")</li>
+                                                    <li>@Html.ActionLink("Excel Upload", "ImportLossCodesDetails", "IdleCodes")</li>
+                                                    <li>@Html.ActionLink("UnIdentifiedLosses", "Index", "UnIdentifiedLossEntry")</li>
+                                                    @*<li>@Html.ActionLink("DownTime Category", "Index", "DownTimeCategory")</li>*@
+                                                    @*<li>@Html.ActionLink("Priority Alarm", "Index", "PriorityAlarm")</li>*@
+
+                                                </ul>
+                                            </li>
+                                            <li class="collapsible">
+                                                <a href="#" onclick="return false;"><i class="fa fa-list"></i>General Config.</a>
+                                                <ul class="sub-menu">
+                                                    @*@if (ViewBag.roleid == 1 || ViewBag.roleid == 2 )*@
+                                                    @if (ViewBag.roleid == 1)
+                                                    {
+                                                        <li>@Html.ActionLink("Day Start & EndTime", "Index", "DayStartAndEndTime")</li>
+                                                        <li>@Html.ActionLink("Module Master", "Index", "ModuleMaster")</li>
+                                                        <li>@Html.ActionLink("Parts", "Index", "Parts")</li>
+                                                    }
+                                                    <li>@Html.ActionLink("STD Time & Weight", "Index", "MasterParts")</li>
+                                                    <li>@Html.ActionLink("Enable Multi-WO", "Index", "MultiWorkOrder")</li>
+                                                    <li>@Html.ActionLink("Generic Work", "Index", "GenericWork")</li>
+                                                    <li>@Html.ActionLink("Email Details", "Index", "MailIDs")</li>
+                                                    <li>@Html.ActionLink("Surface Area / Perimeter", "ImportPartWiseSP", "PartWiseSp")</li>
+                                                    <li>@Html.ActionLink("Units", "Index", "Units")</li>
+                                                </ul>
+                                            </li>
+                                            <li class="collapsible">
+                                                <a href="#" onclick="return false;">
+                                                    <img src="~/icons/clock130.png" />&nbsp Shift Planner
+                                                </a>
+                                                <ul class="sub-menu">
+                                                    <li>@Html.ActionLink("Shift Planner", "Index", "ShiftPlanner")</li>
+                                                    <li>@Html.ActionLink("Shift  Methods", "Index", "ShiftMethod")</li>
+                                                    <li>@Html.ActionLink("Shift Details", "Index", "ShiftDetails")</li>
+                                                </ul>
+                                            </li>
+                                            <li class="collapsible">
+                                                <a href="#" onclick="return false;">
+                                                    <img src="~/icons/multiple25.png" />
+                                                    &nbsp Roles and Users
+                                                </a>
+                                                <ul class="sub-menu">
+                                                    <li>@Html.ActionLink("User", "Index", "Login")</li>
+                                                    <li>@Html.ActionLink("Roles", "Index", "Roles")</li>
+                                                    @* @if (ViewBag.roleid == 1 || ViewBag.roleid == 2 )*@
+                                                    @if (ViewBag.roleid == 1)
+                                                    {
+                                                        <li>@Html.ActionLink("Customer Details", "Index", "Customer")</li>
+                                                        <li>@Html.ActionLink("RolePlay", "Index", "RolePlay")</li>
+                                                    }
+                                                </ul>
+                                            </li>
+                                            <li class="collapsible">
+                                                <a href="#" onclick="return false;">
+                                                    <img src="~/icons/mailEsc.png" />
+                                                    &nbsp Auto Report/Escalation
+                                                </a>
+                                                <ul class="sub-menu">
+                                                    @*<li>@Html.ActionLink("Recipient MailID", "Index", "RecipientMailID")</li>
+                                                        <li>@Html.ActionLink("Sender MailID", "Index", "SenderMailID")</li>
+                                                        <li>@Html.ActionLink("Email ReportType", "Index", "EmailReportType")</li>
+                                                        <li>@Html.ActionLink("MailID's", "Index", "MailIDs")</li>*@
+                                                    <li>@Html.ActionLink("Automatic Report", "Index", "AutomaticReportGeneration")</li>
+                                                    <li>@Html.ActionLink("Email Escalations", "Index", "EMailEscalation")</li>
+                                                </ul>
+                                            </li>
+                                        }
+                                    </ul>
+                                </div>
+                            </div>
+
+
+                            @if (ViewBag.roleid == 1 || ViewBag.roleid == 2)
+                            {
+                                @Html.ActionLink("Create New User", "Create", new { }, new { @class = "btn orange btn-lg ", @style = "color:black;width:25%;height:70%;backgroundcolor:red;font-size:90%;margin-left: 31px;" })
+                            }
+                            <div class="widget-content pad20f" style="float: right; width: 82%">
+                                <article class="widget widget__form">
+                                    <!-- /widget-header -->
+                                    <div class="widget-content pad20f">
+                                        <div class="widget__content table-responsive">
+                                            @if (Model != null)
+                                            {
+                                                <table id="jqueryTable" class="table table-condensed table-striped table-hover">
+                                                    <thead>
+                                                        <tr class="text-centre" style="background-color:orange">
+                                                            <th>Sl.No.</th>
+                                                            <th>User Name</th>
+                                                            <th>Password</th>
+                                                            <th>Primary Role</th>
+                                                            <th>Secondry Role</th>
+                                                            <th>Display Name</th>
+                                                            <th>Machine Name</th>
+
+                                                            @if (ViewBag.roleid == 1 || ViewBag.roleid == 2)
+                                                            {
+                                                                <th>Edit</th>
+                                                                <th>Delete</th>
+                                                                <th>Change Password</th>
+                                                            }
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+
+                                                        @foreach (var item in Model)
+                                                        {
+                                                            <tr>
+                                                                <td style="width: auto; text-align: center; font-family: Helvetica; font-size: 85%">
+                                                                    @slno
+                                                                </td>
+                                                                <td style="width: auto; text-align: center; font-family: Helvetica; font-size: 85%">
+                                                                    @Html.DisplayFor(modelItem => item.UserName)
+                                                                </td>
+
+                                                                <td style="width: auto; text-align: center; font-family: Helvetica; font-size: 85%">
+                                                                    ****
+                                                                </td>
+                                                                <td style="width: auto; text-align: center; font-family: Helvetica; font-size: 85%">
+                                                                    @Html.DisplayFor(modelItem => item.tblrole.RoleDesc)
+                                                                </td>
+
+                                                                <td style="width: auto; text-align: center; font-family: Helvetica; font-size: 85%">
+                                                                    @Html.DisplayFor(modelItem => item.tblrole1.RoleDesc)
+                                                                </td>
+                                                                <td style="width: auto; text-align: center; font-family: Helvetica; font-size: 85%">
+                                                                    @Html.DisplayFor(modelItem => item.DisplayName)
+                                                                </td>
+                                                                <td style="width: auto; text-align: center; font-family: Helvetica; font-size: 85%">
+                                                                    @Html.DisplayFor(modelItem => item.tblmachinedetail.MachineDispName)
+                                                                </td>
+                                                                @if (ViewBag.roleid == 1 || ViewBag.roleid == 2)
+                                                                {
+                                                                    <td style="width: auto; text-align: center; font-family: Helvetica" data-toggle="tooltip" title="Edit">
+                                                                        @Html.ActionLink(" ", "Edit", new { id = item.UserID }, new { @class = " blue  btn-lg fa fa-edit", @style = "color:white;text-decoration:none" })
+                                                                    </td>
+                                                                    <td style="width: auto; text-align: center; font-family: Helvetica" data-toggle="tooltip" title="Delete">
+                                                                        @{
+                                                                            var id = item.UserID;
+                                                                            @Html.ActionLink(" ", "Delete", new { id = item.UserID }, new { @id = id, @class = "DeleteModel red btn-lg fa fa-trash", @style = "color:white;text-decoration:none" })
+                                                                        }
+                                                                    </td>
+                                                                    <td style="width: auto; text-align: center; font-family: Helvetica" data-toggle="tooltip" title="Changepassword">
+                                                                        @Html.ActionLink(" ", "ChangePassword", new { id = item.UserID }, new { @class = "yellow  btn-lg fa fa-edit", @style = "color:white;text-decoration:none" })
+                                                                        @*<input type="button" value="ChangePassword" id="ChangePassword" name="@item.UserID" class="blue  btn-lg fa fa-resetPassword" style = "color:white;text-decoration:none" />*@
+                                                                    </td>
+                                                                }
+                                                            </tr>
+                                                            slno = slno + 1;
+                                                        }
+
+                                                    </tbody>
+                                                </table>
+                                            }
+                                            else
+                                            {
+                                                <p style="color: red">No Data is Available</p>
+                                            }
+                                        </div>
+                                    </div>
+
+
+
+                                    <input type="checkbox" id="TogglePrvWOSelection" style="visibility:hidden" />
+                                    <!-- /widget-content -->
+                                </article>
+                            </div>
+                        </div>
+                        <!-- /widget -->
+                    </section>
+                </div>
+            </div>
+        </div>
+    }
+
+    <form style="display:none" action="/HMIScree/DDLList" method="POST" id="PostMethodForDDL">
+        <input type="hidden" id="data1" name="data1" value="" />
+        <input type="hidden" id="selectedValues" value="@ViewBag.selectedValues" name="selectedValue" />
+    </form>
+
+    <script type="text/javascript" src="~/js/jquery-2.1.4.min.js"></script>
+    <script src="~/Content1/SuperTable/jquery.dataTables.min.js"></script>
+    <script src="~/Scripts/jquery.dataTables.js"></script>
+
+    <script>
+
+    $(document).ready(function () {
+        var table = $('#jqueryTable').dataTable({
+            //"bPaginate": false,
+            //"paging": false,
+        });
+    });
+    </script>
+
+    @*Close Error Div*@
+    <script>
+        setTimeout(function () {
+            $('#ErrorDiv').fadeOut('slow');
+        }, 15000); // <-- time in milliseconds
+    </script>
+
+

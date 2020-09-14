@@ -1,0 +1,107 @@
+﻿@{
+    ViewBag.Title = "Dashboard";
+    Layout = "~/Views/Shared/_LayoutForTCF.cshtml";
+}
+<!-- page content -->
+<div class="right_col" role="main">
+
+    <div class="xx_panel">
+        <div class="xx_content">
+            <input type="hidden" id="hdnSession" data-value="@Request.RequestContext.HttpContext.Session["UserId"]" />
+        </div>
+        <div class="example-box-wrapper">
+            <div class="row">
+                <div class="col-md-3">
+                    <a href="http://10.20.10.65:8066/index">
+                        <div class="tile-box tile-box-alt bg-parrot" style="color: #fff;border-color: #F535AA;background:#F535AA;">
+                            <div class="tile-header">
+                                TCF NoCode
+                            </div>
+                            <div class="tile-content-wrapper">
+                                <img src="~/icons/gears1.png" />
+                            </div>
+                            <div class="tile-footer tooltip-button">
+                                view details
+                                <i class="fa fa-arrow-right glyph-icon" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-3">
+                    <a href="http://10.20.10.65:8066/index-unassigned">
+                        <div class="tile-box tile-box-alt bg-parrot" style="color: #fff;border-color: #F535AA;background:#F535AA;">
+                            <div class="tile-header">
+                                TCF UnAssigned
+                            </div>
+                            <div class="tile-content-wrapper">
+                                <img src="~/icons/gears1.png" />
+                            </div>
+                            <div class="tile-footer tooltip-button">
+                                view details
+                                <i class="fa fa-arrow-right glyph-icon" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-3">
+                    <a href="http://10.20.10.65:8066/index-nologin">
+                        <div class="tile-box tile-box-alt bg-parrot" style="color: #fff;border-color: #F535AA;background:#F535AA;">
+                            <div class="tile-header">
+                                TCF NoLogin
+                            </div>
+                            <div class="tile-content-wrapper">
+                                <img src="~/icons/gears1.png" />
+                            </div>
+                            <div class="tile-footer tooltip-button">
+                                view details
+                                <i class="fa fa-arrow-right glyph-icon" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3">
+                    <a href="http://10.20.10.65:8066/indexdata-loss-tcf">
+                        <div class="tile-box tile-box-alt bg-parrot" style="color: #fff;border-color: #F535AA;background:#F535AA;">
+                            <div class="tile-header">
+                                Data Loss TCF
+                            </div>
+                            <div class="tile-content-wrapper">
+                                <img src="~/icons/gears1.png" />
+                            </div>
+                            <div class="tile-footer tooltip-button">
+                                view details
+                                <i class="fa fa-arrow-right glyph-icon" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-3">
+                    <a href="http://10.20.10.65:8066/index-wrongqty">
+                        <div class="tile-box tile-box-alt bg-parrot" style="color: #fff;border-color: #F535AA;background:#F535AA;">
+                            <div class="tile-header">
+                                TCF Wrong Quantity Updation
+                            </div>
+                            <div class="tile-content-wrapper">
+                                <img src="~/icons/gears1.png" />
+                            </div>
+                            <div class="tile-footer tooltip-button">
+                                view details
+                                <i class="fa fa-arrow-right glyph-icon" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /page content -->
+
+<script src="~/vendors/jquery/dist/jquery.min.js"></script>
+@*<script src="~/Scripts/MCAdmin/Dashboard.js"></script>*@

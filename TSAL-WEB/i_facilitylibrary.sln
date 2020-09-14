@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.106
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "i_facilitylibrary", "i_facilitylibrary\i_facilitylibrary.csproj", "{EFEBEB9C-DD98-4656-B4BC-C63FCECD4ED3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "i_facility", "i_facility\i_facility.csproj", "{85656FE3-0810-41BC-BBA0-16424E8F0D9C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EFEBEB9C-DD98-4656-B4BC-C63FCECD4ED3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFEBEB9C-DD98-4656-B4BC-C63FCECD4ED3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFEBEB9C-DD98-4656-B4BC-C63FCECD4ED3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFEBEB9C-DD98-4656-B4BC-C63FCECD4ED3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85656FE3-0810-41BC-BBA0-16424E8F0D9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85656FE3-0810-41BC-BBA0-16424E8F0D9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85656FE3-0810-41BC-BBA0-16424E8F0D9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85656FE3-0810-41BC-BBA0-16424E8F0D9C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1C3C889B-1C22-4850-81E5-98E3609AAF73}
+	EndGlobalSection
+EndGlobal
